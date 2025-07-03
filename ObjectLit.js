@@ -7,3 +7,10 @@ const user = {
         console.log(this.name, this.email, this.birth, this.active);
     }
 }
+
+const display = function(){
+    console.log(this.name, this.email)
+}
+
+const displayName = display.bind(user)
+displayName()
