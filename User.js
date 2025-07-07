@@ -39,11 +39,28 @@ export default class User {
         this.#name = newName
     }
 
-    displayInfo(){
+    /*displayInfo(){
         return `${this.name}, ${this.email}`
     }
+    */
 
+    displayInfo(){
+        if (this.role === "student"){
+            return ` student: ${this.name}`
+        }
+        if(this.role === "admin"){
+            return ` Admin: ${this.name}`
+        }
+        if (this.role === "teacher"){
+            return ` student: ${this.name}`
+        }
+    }
+    
+    static displayInfoGeneric(name,email){
+        return `${name}, ${email}`
+    }
 }
+
 
 const newUser = new User('Felipe', 'fe@gmail.com', '08/01/2003')
 //console.log(newUser);

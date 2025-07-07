@@ -10,6 +10,6 @@ export default class Teacher extends User {
 }
 
 const newTeacher = new Teacher("Vanildinha", "20/05/99", "Va@gmail.com")
-console.log(newTeacher.displayInfo())
-console.log(newTeacher.aproveUser("felipinho", "ADS"));
+//console.log(newTeacher.displayInfo())
+//console.log(newTeacher.aproveUser("felipinho", "ADS"));
 
